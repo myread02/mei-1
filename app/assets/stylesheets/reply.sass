@@ -1,13 +1,24 @@
-div#reply-container
-  right: 0
-  top: 4em
+$mobile-large: 320px
+$tablet-large: 768px
+
+#reply-container
   position: fixed
+  right: 0
+  top: 0
   width: 40%
 
   padding: 1em 2em 1em 1em
 
   background: #fff
   border: 1px solid #ccc
+
+  @media screen and (max-width: $mobile-large)
+    width: 100%
+    left: 0
+    background: black
+
+  @media screen and (max-width: $tablet-large)
+    background: black
 
   textarea
     height: 10em

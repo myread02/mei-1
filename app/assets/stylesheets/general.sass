@@ -1,10 +1,28 @@
+$color-background: hsla(60, 100%, 97%, 1)
+$color-font: hsla(0, 0%, 20%, 1)
+
+$mobile-small: 240px
+$mobile-large: 320px
+$tablet-small: 480px
+$tablet-large: 768px
+$screen-small: 1024px
+$screen-large: 1280px
+
 *
   box-sizing: border-box
 
 body
   margin: 1em
+  font-color: $color-font
+  background-color: $color-background
 
-.header>form
+  @media screen and (max-width: $mobile-large)
+    margin: 0
+
+  @media screen and (max-width: $tablet-large)
+    margin: 5px
+
+.head-post>form
   max-width: 600px
 .field, textarea
   margin-bottom: 5px

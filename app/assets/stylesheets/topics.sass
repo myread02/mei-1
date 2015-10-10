@@ -1,9 +1,17 @@
+$mobile-large: 320px
+$tablet-large: 768px
+
 section.topic
+  width: 600px
   border-bottom: 1px solid #ccc
   padding-bottom: 1em
   margin-bottom: 1em
 
-  h1
+  @media screen and (max-width: $tablet-large)
+    width: 100%
+
+  h3
+    font-size: 2em
     margin-bottom: 0.5em
 
   .actions

@@ -5,7 +5,8 @@ gem 'bundler', '>= 1.8.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # database
-gem 'pg', '~> 0.18.2'
+#gem 'pg', '~> 0.18.2'
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -29,7 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'puma', '~> 2.11.1'
+#gem 'puma', '~> 2.11.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -78,7 +79,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 1.3.6'
 
-  gem 'mysql2', '~> 0.3.18' # Sequel Pro is too good that I can't escape MySQL
+  #gem 'mysql2', '~> 0.3.18' # Sequel Pro is too good that I can't escape MySQL
 end
 
 group :test, :darwin do
